@@ -8,8 +8,48 @@ pub enum Command {
     Keep(f32, f32),
 }
 
+/// Parses formats: "HH:MM:SS.mmm", "MM:SS.mmm", or "SS.mmm" into seconds (f32).
+pub fn parse_timestamp(raw: &str) -> Result<f32, &'static str> {
+    let clean = raw.trim();
+    let parts: Vec<&str> = clean.split(':').collect();
+
+    match parts.len() {
+        // Formato decimal directo: "83.5"
+        1 => parts[0]
+            .parse::<f32>()
+            .map_err(|_| "Failed to parse seconds"),
+
+        // Formato "MM:SS.mmm": "01:23.500"
+        2 => {
+            let minutes = parts[0]
+                .parse::<f32>()
+                .map_err(|_| "Failed to parse minutes")?;
+            let seconds = parts[1]
+                .parse::<f32>()
+                .map_err(|_| "Failed to parse seconds")?;
+            Ok(minutes * 60.0 + seconds)
+        }
+
+        // Formato "HH:MM:SS.mmm": "00:01:23.500"
+        3 => {
+            let hours = parts[0]
+                .parse::<f32>()
+                .map_err(|_| "Failed to parse hours")?;
+            let minutes = parts[1]
+                .parse::<f32>()
+                .map_err(|_| "Failed to parse minutes")?;
+            let seconds = parts[2]
+                .parse::<f32>()
+                .map_err(|_| "Failed to parse seconds")?;
+            Ok(hours * 3600.0 + minutes * 60.0 + seconds)
+        }
+
+        _ => Err("Invalid timestamp format"),
+    }
+}
+
 // ==========================================
-// TRAITS (The Plug & Play Contracts)
+// TRAITS (Plug & Play Contracts)
 // ==========================================
 
 pub trait CommandSource {
@@ -26,7 +66,7 @@ pub trait AiCompiler {
 }
 
 // ==========================================
-// SOURCES & MOCKS
+// IMPLEMENTACIONES CONCRETAS Y MOCKS
 // ==========================================
 
 pub struct TextCommandSource {
@@ -45,8 +85,8 @@ impl CommandSource for TextCommandSource {
 
             let parts: Vec<&str> = trimmed.split_whitespace().collect();
             if parts.len() == 4 && parts[0] == "DROP" && parts[2] == "-" {
-                let start = parts[1].parse::<f32>().map_err(|_| "Failed to parse start timestamp")?;
-                let end = parts[3].parse::<f32>().map_err(|_| "Failed to parse end timestamp")?;
+                let start = parse_timestamp(parts[1])?;
+                let end = parse_timestamp(parts[3])?;
                 commands.push(Command::Drop(start, end));
             } else {
                 return Err("Syntax error: line must follow 'DROP <start> - <end>'");
@@ -75,9 +115,22 @@ impl MediaRenderer for MockMediaRenderer {
     fn render_copy(&self, input_file: &str, ranges: &[TimeRange], output_file: &str) -> Result<(), &'static str> {
         println!("[MOCK FFMPEG] Processing input: {}", input_file);
         for (i, range) in ranges.iter().enumerate() {
-            println!("  -> Concatenating chunk {}: [{}s - {}s]", i, range.start, range.end);
+            println!("  -> Concatenating chunk {}: [{:.3}s - {:.3}s]", i, range.start, range.end);
         }
         println!("[MOCK FFMPEG] Successfully rendered to: {}", output_file);
         Ok(())
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_parse_timestamp_formats() {
+        assert_eq!(parse_timestamp("15.5").unwrap(), 15.5);
+        assert_eq!(parse_timestamp("01:30.0").unwrap(), 90.0);
+        assert_eq!(parse_timestamp("01:00:00.0").unwrap(), 3600.0);
+        assert_eq!(parse_timestamp("00:02:15.500").unwrap(), 135.5);
     }
 }

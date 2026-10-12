@@ -1,0 +1,43 @@
+import os
+import subprocess
+
+def main():
+    concat_list = "concat_list.txt"
+    output_file = "video_final.mp4"
+    idx = 1
+    files_to_join = []
+
+    # Loop dinamico buscando salida1.mp4, salida2.mp4, etc.
+    while os.path.exists(f"salida{idx}.mp4"):
+        files_to_join.append(f"file 'salida{idx}.mp4'\n")
+        idx += 1
+
+    if not files_to_join:
+        print("No se encontraron videos salidaX.mp4")
+        return
+
+    # Escribir el manifiesto para FFmpeg concat demuxer
+    with open(concat_list, "w", encoding="utf-8") as f:
+        f.writelines(files_to_join)
+
+    print(f"Concatenando {len(files_to_join)} partes en {output_file}...")
+
+    # Ejecutar concatenacion rapida sin re-renderizar
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-f", "concat",
+        "-safe", "0",
+        "-i", concat_list,
+        "-c", "copy",
+        output_file,
+    ]
+    subprocess.run(cmd, check=True)
+
+    if os.path.exists(concat_list):
+        os.remove(concat_list)
+
+    print(f"Completado exitosamente -> {output_file}")
+
+if __name__ == "__main__":
+    main()

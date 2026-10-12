@@ -1,0 +1,31 @@
+Prompt Maestro para Automatizar Cortes
+Plaintext
+Actúa como un editor de video técnico profesional y analista de audio.
+
+Tengo un archivo `sample_input.json` generado por Whisper con las marcas de tiempo (`start`, `end`, `text`) y la duración total del video. Mi herramienta CLI en Rust utiliza un modelo sustractivo basado en comandos `DROP <inicio> - <fin>` para recortar fragmentos sin recodificar vía FFmpeg.
+
+Tu tarea:
+1. Analizar los timestamps y el contenido transcripto.
+2. Identificar y descartar:
+   - Silencios muertos o pausas incómodas (> 1.5 - 2.0 segundos entre frases o al inicio/fin).
+   - Tomas falsas, trabadas, titubeos, muletillas excesivas y oraciones reiniciadas (deja solo la toma buena o definitiva).
+   - Divagaciones fuera de tema que no aporten al hilo principal del video (redes sociales, pausas largas de lectura/espera, distracciones del entorno).
+3. Conservar:
+   - Explicaciones técnicas fluidas, razonamiento en voz alta del problema/código, reacciones espontáneas de valor para el formato devlog y momentos clave de demostración.
+4. Generar la salida estrictamente en el formato esperado por `commands.txt`:
+   - Cada descarte debe ser una línea: `DROP HH:MM:SS.mmm - HH:MM:SS.mmm` (o segundos flotantes si aplica).
+   - Agrega un comentario descriptivo breve arriba de cada DROP explicando qué se está eliminando.
+   - Añade una tabla resumen con los bloques resultantes que quedarán en el video final.
+
+Aquí está el JSON:
+[PEGA TU JSON AQUÍ]
+¿Cómo usarlo en tu flujo de trabajo?
+Corres tu transcripción: python transcrib.py.
+
+Abres sample_input.json, copias todo el contenido.
+
+Pegas el prompt maestro anterior junto con el JSON.
+
+Copias la respuesta directamente dentro de tu archivo commands.txt.
+
+Ejecutas cargo run en tu terminal.

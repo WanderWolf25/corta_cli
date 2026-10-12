@@ -1,0 +1,36 @@
+# ============================================================
+# PLAN DE CORTE - DEVLOG PARTE 2: PROBANDO LA HERRAMIENTA
+# ============================================================
+
+# 1. Pausa larga antes de la prueba en consola
+DROP 00:00:43.510 - 00:01:23.000
+
+# 2. Silencio mientras se ejecutaba cargo run / espera
+DROP 00:02:04.820 - 00:03:16.820
+
+# 3. Pausa larga antes de que saliera el output
+DROP 00:04:10.000 - 00:05:09.290
+
+# 4. Pausa larga mientras abrías el video de 25 minutos
+DROP 00:05:24.250 - 00:05:48.580
+
+# 5. Silencios mientras veías el playback del video cortado
+DROP 00:06:49.340 - 00:07:07.270
+
+# 6. Momento muerto viendo la repetición de la lógica de drop
+DROP 00:08:21.880 - 00:08:51.000
+
+# 7. Silencio leyendo la respuesta del chat
+DROP 00:09:56.000 - 00:10:09.620
+
+# 8. Silencio y pelea cancelando el instalador de DaVinci Resolve
+DROP 00:10:54.000 - 00:11:53.000
+
+# 9. Pausas largas antes de generar la miniatura
+DROP 00:12:15.000 - 00:12:33.000
+
+# 10. Pausa mientras se generaba la imagen
+DROP 00:12:53.000 - 00:13:09.000
+
+# 11. Silencio prolongado final antes de despedir el video
+DROP 00:14:31.500 - 00:14:54.980

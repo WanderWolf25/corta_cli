@@ -1,0 +1,465 @@
+{
+  "duration": 916.5735,
+  "segments": [
+    {
+      "start": 1.1,
+      "end": 43.51,
+      "text": "Argo Ron, pues aquí me enviciaron las malas compañías al rast y me sacaron del C-Sharve y del C-Mas más y pues no más escuché esto chaval."
+    },
+    {
+      "start": 43.51,
+      "end": 83.24,
+      "text": "A ver, ¿tú se funciona? Genialo que, vamos a probar con otro video."
+    },
+    {
+      "start": 83.24,
+      "end": 116.0,
+      "text": "bienvenidos muchachos a mi consola ahi si hoy los vamos a consolar enseñandoles"
+    },
+    {
+      "start": 116.0,
+      "end": 123.96,
+      "text": "bienvenidos a la partida de creando un video"
+    },
+    {
+      "start": 123.96,
+      "end": 124.96,
+      "text": "valimos"
+    },
+    {
+      "start": 124.96,
+      "end": 196.82,
+      "text": "Bien, pues ahora es con 27.000. Cargo run. Si se cargó run, entonces tiene que ser cargo run."
+    },
+    {
+      "start": 196.82,
+      "end": 248.76,
+      "text": "Vale, vamos a ver. Se está escribiendo en segundo."
+    },
+    {
+      "start": 248.76,
+      "end": 250.76,
+      "text": "Vamos a la pausa."
+    },
+    {
+      "start": 250.76,
+      "end": 252.76,
+      "text": "Ok."
+    },
+    {
+      "start": 252.76,
+      "end": 257.19,
+      "text": "Muy bien, ya está."
+    },
+    {
+      "start": 257.19,
+      "end": 270.81,
+      "text": "Ya estaría."
+    },
+    {
+      "start": 270.81,
+      "end": 309.29,
+      "text": "¿Qué sucede?"
+    },
+    {
+      "start": 309.29,
+      "end": 314.61,
+      "text": "que chistoso, gran parte del metraje son pocos alagros de variaciones sobre el pulso"
+    },
+    {
+      "start": 314.61,
+      "end": 319.05,
+      "text": "yo cae al celular el discurso, peleas con el canvas de obsidia ni momentos donde te quedaste"
+    },
+    {
+      "start": 319.05,
+      "end": 324.25,
+      "text": "leyendo o esperando. Bueno ahora, un devlog tiene conflicto y el corte debe enfocarse en la"
+    },
+    {
+      "start": 324.25,
+      "end": 348.58,
+      "text": "progresión real del proyecto. Ok. Ay que chistoso. Ok. Era que en commands."
+    },
+    {
+      "start": 348.58,
+      "end": 366.87,
+      "text": "¡Hostia! ¡Qué rápido! ¡Ah! ¡Ah quedó 25 minutos!"
+    },
+    {
+      "start": 366.87,
+      "end": 379.66,
+      "text": "Muy bien, primera prueba utilizando esto. Aquí estamos en el entorno de exponer la prueba."
+    },
+    {
+      "start": 379.66,
+      "end": 384.7,
+      "text": "Aquí ya estamos en el entorno de desarrollo. En esta cosa estamos usando gmini para sensitizar"
+    },
+    {
+      "start": 384.7,
+      "end": 392.6,
+      "text": "las cosas rápido sin descripción de lo que vamos a hacer."
+    },
+    {
+      "start": 392.6,
+      "end": 402.98,
+      "text": "y lo que hace es meter este... el time range, o sea, el nuevo... ay, que cómodo está esta herramienta,"
+    },
+    {
+      "start": 402.98,
+      "end": 409.34,
+      "text": "ahora sí, ya no me voy a tener que preocupar de editar, jajaja, que hueva, lo lazo, o sí, o sí, o sí,"
+    },
+    {
+      "start": 409.34,
+      "end": 427.27,
+      "text": "muy bien, ya tenemos de bien si resolvo, ¿no? Ya está, ya quedó una de las herramientas"
+    },
+    {
+      "start": 427.27,
+      "end": 432.51,
+      "text": "que no funcionan lo cual da hueva, porque estamos haciendo como... es que estamos haciendo"
+    },
+    {
+      "start": 432.51,
+      "end": 438.99,
+      "text": "un drop, o sea, estamos haciendo un guitar. Ay, esto es increíble. Muy bien, ¿qué hacía el drop?"
+    },
+    {
+      "start": 438.99,
+      "end": 450.19,
+      "text": "Amá, adicen, ah, drop. O sea, es para quitarlo a la caca. Ay, yo decía es para quitarlo a la caca."
+    },
+    {
+      "start": 450.19,
+      "end": 463.91,
+      "text": "Pero, o sea, si está dentro de otro, ¿por qué? Creo que ya entiendo, esta es la función drop. O"
+    },
+    {
+      "start": 463.91,
+      "end": 467.21,
+      "text": "sea, se supone que se debería inicializar con un segmento completo, ¿no? Entonces,"
+    },
+    {
+      "start": 467.21,
+      "end": 478.12,
+      "text": "tiene mucho sentido. Ya, ya, ya le estoy entendiendo. Son los segmentos. Aquí estamos"
+    },
+    {
+      "start": 478.12,
+      "end": 481.88,
+      "text": "trabajando segmentos. No, aquí estamos trabajando en la opción de dropir, o sea, de borrar cosas."
+    },
+    {
+      "start": 481.88,
+      "end": 491.72,
+      "text": "Y si, si está en medio, como ya hay un segmento allí, se crea uno nuevo."
+    },
+    {
+      "start": 491.72,
+      "end": 496.36,
+      "text": "No, pues, no, pues, quedé emocionado. La verdad, ay, que puedo recortar cosas. Este"
+    },
+    {
+      "start": 496.36,
+      "end": 502.12,
+      "text": "herramienta me quedó increíble. Bueno, nos quedó mi y mi esposa, Jimmy."
+    },
+    {
+      "start": 502.12,
+      "end": 531.05,
+      "text": "ok no pues muy bien pues quedó bien cool muy bien no pues esta es la última parte ya del"
+    },
+    {
+      "start": 531.05,
+      "end": 536.17,
+      "text": "vídeo también la vamos a recortar así bien loco con con esta herramienta que hicimos porque"
+    },
+    {
+      "start": 536.17,
+      "end": 551.28,
+      "text": "muy bien ahora tenera titulo y descripción para este vídeo"
+    },
+    {
+      "start": 551.28,
+      "end": 570.87,
+      "text": "romeo un editor de vídeo en ross sin recodificar porque está ando whisper"
+    },
+    {
+      "start": 570.87,
+      "end": 581.38,
+      "text": "ay yo ni siquiera fue la primaria bien completada un digo yo soy el xanquino"
+    },
+    {
+      "start": 581.38,
+      "end": 584.26,
+      "text": "A ver, enfoque de estilo y tu desafío."
+    },
+    {
+      "start": 584.26,
+      "end": 586.74,
+      "text": "Enfoque directo y el terreno creando una herramienta de salir en rasco."
+    },
+    {
+      "start": 586.74,
+      "end": 590.54,
+      "text": "No, pues yo creo que está."
+    },
+    {
+      "start": 590.54,
+      "end": 609.62,
+      "text": "¿Qué dice?"
+    },
+    {
+      "start": 609.62,
+      "end": 612.78,
+      "text": "Es la paraja de la historia que se ha sido por hoy en día y es precisamente por eso"
+    },
+    {
+      "start": 612.78,
+      "end": 615.74,
+      "text": "que el enfoque presivio de un test y lo dices sin tapujo o ser brutalmente no."
+    },
+    {
+      "start": 615.74,
+      "end": 616.74,
+      "text": "Esto es la mejor rechala."
+    },
+    {
+      "start": 616.74,
+      "end": 619.74,
+      "text": "En el canal de YouTube está escribiendo la manga de la mano."
+    },
+    {
+      "start": 619.74,
+      "end": 620.7,
+      "text": "No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no,"
+    },
+    {
+      "start": 620.7,
+      "end": 628.58,
+      "text": "Tienes contigo 10 veces una de las técnicas de señas, yo necesito..."
+    },
+    {
+      "start": 628.58,
+      "end": 635.05,
+      "text": "Hice un editor de video en rosa y escribí una línea de código purugio."
+    },
+    {
+      "start": 635.05,
+      "end": 638.05,
+      "text": "Estoy pidiendo programor que una herramienta se diga en rosa."
+    },
+    {
+      "start": 638.05,
+      "end": 653.86,
+      "text": "Ah, pero tú me habías hecho cazagón, había solo lo más importante."
+    },
+    {
+      "start": 653.86,
+      "end": 654.86,
+      "text": "A ver, si está lo..."
+    },
+    {
+      "start": 654.86,
+      "end": 659.14,
+      "text": "Un blackmail, no."
+    },
+    {
+      "start": 659.14,
+      "end": 662.06,
+      "text": "No, no, no, no."
+    },
+    {
+      "start": 662.06,
+      "end": 664.98,
+      "text": "Cuando la dice lo que define un ingeniero, la ella no viene a esta sola."
+    },
+    {
+      "start": 664.98,
+      "end": 667.78,
+      "text": "No, no."
+    },
+    {
+      "start": 667.78,
+      "end": 675.16,
+      "text": "A ver."
+    },
+    {
+      "start": 675.16,
+      "end": 680.56,
+      "text": "Black magic, de bench in control panels, no sé ni qué onda."
+    },
+    {
+      "start": 680.56,
+      "end": 685.72,
+      "text": "No me pongan ningún acelerador, igual ni qué las gráficas son bien loops."
+    },
+    {
+      "start": 685.72,
+      "end": 691.89,
+      "text": "Si juntamos videos con pura línea de códigos para noten."
+    },
+    {
+      "start": 691.89,
+      "end": 693.89,
+      "text": "uuuuuuuuuuuuuuuuuuuuuuuuna que hueva"
+    },
+    {
+      "start": 693.89,
+      "end": 703.89,
+      "text": "le voy a instalarlo"
+    },
+    {
+      "start": 703.89,
+      "end": 709.38,
+      "text": "creo que lo cancelé la instalación"
+    },
+    {
+      "start": 709.38,
+      "end": 715.44,
+      "text": "y la cance"
+    },
+    {
+      "start": 715.44,
+      "end": 717.44,
+      "text": "titulo y descripción"
+    },
+    {
+      "start": 717.44,
+      "end": 724.69,
+      "text": "hice una herramienta de enlace"
+    },
+    {
+      "start": 724.69,
+      "end": 728.32,
+      "text": "de mi cara con el código progame"
+    },
+    {
+      "start": 728.32,
+      "end": 730.32,
+      "text": "estando un editor de videonlose con ella"
+    },
+    {
+      "start": 730.32,
+      "end": 735.55,
+      "text": "me gusta la vencera"
+    },
+    {
+      "start": 735.55,
+      "end": 753.74,
+      "text": "son sí y ya"
+    },
+    {
+      "start": 753.74,
+      "end": 759.84,
+      "text": "este son muy buenos"
+    },
+    {
+      "start": 759.84,
+      "end": 761.84,
+      "text": "generame la mía"
+    },
+    {
+      "start": 761.84,
+      "end": 769.18,
+      "text": "le ponemos"
+    },
+    {
+      "start": 769.18,
+      "end": 773.46,
+      "text": "un feeding"
+    },
+    {
+      "start": 773.46,
+      "end": 789.18,
+      "text": "ahi esta"
+    },
+    {
+      "start": 789.18,
+      "end": 804.69,
+      "text": "mi tercer video es en Rosconia"
+    },
+    {
+      "start": 804.69,
+      "end": 806.69,
+      "text": "ay que chistoso ya quedo bien perro"
+    },
+    {
+      "start": 806.69,
+      "end": 817.17,
+      "text": "y el logo del video"
+    },
+    {
+      "start": 817.17,
+      "end": 819.17,
+      "text": "contad"
+    },
+    {
+      "start": 819.17,
+      "end": 821.17,
+      "text": "ya nomas y esta puso mi reloj"
+    },
+    {
+      "start": 821.17,
+      "end": 823.17,
+      "text": "ooooo"
+    },
+    {
+      "start": 823.17,
+      "end": 825.17,
+      "text": "ah no se si sonro lobal"
+    },
+    {
+      "start": 825.17,
+      "end": 827.17,
+      "text": "mi sonrambanda"
+    },
+    {
+      "start": 827.17,
+      "end": 829.17,
+      "text": "date"
+    },
+    {
+      "start": 829.17,
+      "end": 835.14,
+      "text": "date"
+    },
+    {
+      "start": 835.14,
+      "end": 845.65,
+      "text": "ingeniero puro copy paste"
+    },
+    {
+      "start": 845.65,
+      "end": 847.65,
+      "text": "video editor de video en ros"
+    },
+    {
+      "start": 847.65,
+      "end": 858.16,
+      "text": "perfecto"
+    },
+    {
+      "start": 858.16,
+      "end": 866.5,
+      "text": "Nadie sabrá que si o si, mas que los que vean el video."
+    },
+    {
+      "start": 866.5,
+      "end": 871.5,
+      "text": "A ver pues que estaba haciendo y eso me fue la onda."
+    },
+    {
+      "start": 871.5,
+      "end": 894.98,
+      "text": "Ay me acuerdo estaba instalando esa cosa, pero no siria para nada."
+    },
+    {
+      "start": 894.98,
+      "end": 915.51,
+      "text": "No pues si ya es todo, nos vemos muchachos, este video tambien va a ir ahi."
+    }
+  ]
+}
